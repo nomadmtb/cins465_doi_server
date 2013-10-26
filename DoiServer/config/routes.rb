@@ -1,4 +1,6 @@
 DoiServer::Application.routes.draw do
+  resources :urls
+
   resources :dois
 
   get "home/index"
