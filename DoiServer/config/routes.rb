@@ -1,4 +1,6 @@
 DoiServer::Application.routes.draw do
+  resources :dois
+
   get "home/index"
   devise_for :users
 
