@@ -1,4 +1,6 @@
 DoiServer::Application.routes.draw do
+  resources :reviews
+
   resources :urls
 
   resources :dois
