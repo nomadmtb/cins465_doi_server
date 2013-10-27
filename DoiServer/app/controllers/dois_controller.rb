@@ -15,6 +15,12 @@ class DoisController < ApplicationController
   # GET /dois/new
   def new
     @doi = Doi.new
+
+    if params[:user_id]
+      @doi.user_id = params[:user_id]
+    else
+      # redirect_to root_url
+    end
   end
 
   # GET /dois/1/edit

@@ -24,7 +24,8 @@
 	    <li><%= link_to "DOI's", dois_path %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-	    <li><% if user_signed_in? %><%= link_to current_user.email, dois_path %></li>
+	    <li><% if user_signed_in? %><%= link_to "Logged in as: " + current_user.email, dois_path %></li>
+                <li><%= link_to "Log Out", destroy_user_session_path, :method => 'delete' %></li>
 		  <% else %>
 		    <li><%= link_to "Sign up", new_user_registration_path %></li>
  		    <li><%= link_to "Sign in", new_user_session_path %></li>
@@ -37,7 +38,7 @@
 
       <div class="container">
 		<% if notice %>
-		  <div class="alert alert-danger"><%= notice %></div>
+		  <div class="alert alert-success"><%= notice %></div>
 		<% end %>
 		<% if alert %>
 	          <div class="alert alert-danger"><%= alert %></div>

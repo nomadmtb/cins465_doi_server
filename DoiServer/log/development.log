@@ -6284,3 +6284,2121 @@ Processing by DoisController#index as HTML
   [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
   Rendered dois/index.html.erb within layouts/application (1.6ms)
 Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.4ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 14:24:09 -0700
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 14:24:12 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 14:24:12 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 14:24:13 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 14:24:14 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 9.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 14:24:15 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 14:24:16 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 14:24:17 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 14:24:22 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 14:24:24 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 14:24:25 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 14:24:26 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 14:36:08 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 14:36:08 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 14:36:09 -0700
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 15:49:14 -0700
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:53:37 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:53:39 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.3ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:53:40 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 77ms (Views: 74.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:54:24 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:25 -0700
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:54:26 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:54:28 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:54:28 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:54:29 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:54:30 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:54:31 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:54:33 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:54:33 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:54:34 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:54:34 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:54:35 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:54:35 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:54:36 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:54:37 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:54:45 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/doi/new" for 172.16.12.1 at 2013-10-27 15:54:51 -0700
+
+ActionController::RoutingError (No route matches [GET] "/doi/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.8ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (51.8ms)
+
+
+Started GET "/dois/new" for 172.16.12.1 at 2013-10-27 15:54:55 -0700
+Processing by DoisController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered dois/_form.html.erb (31.9ms)
+  Rendered dois/new.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 51ms (Views: 46.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:55 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 15:54:56 -0700
+
+
+Started GET "/dois/new" for 172.16.12.1 at 2013-10-27 15:57:49 -0700
+Processing by DoisController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 75ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:57:49 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 15:57:50 -0700
+
+
+Started GET "/doi/new" for 172.16.12.1 at 2013-10-27 15:57:55 -0700
+
+ActionController::RoutingError (No route matches [GET] "/doi/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.9ms)
+
+
+Started GET "/new/doi" for 172.16.12.1 at 2013-10-27 15:58:01 -0700
+
+ActionController::RoutingError (No route matches [GET] "/new/doi"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.3ms)
+
+
+Started GET "/dois/new" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+Processing by DoisController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 15:58:07 -0700
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:58:10 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.3ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:58:11 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:58:11 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:58:12 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois/new" for 172.16.12.1 at 2013-10-27 15:58:24 -0700
+Processing by DoisController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:58:24 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dois/new" for 172.16.12.1 at 2013-10-27 15:59:07 -0700
+Processing by DoisController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 68ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 15:59:08 -0700
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:59:43 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:59:44 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user" for 172.16.12.1 at 2013-10-27 15:59:50 -0700
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.7ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:59:56 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:59:57 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:59:57 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 15:59:58 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois/new" for 172.16.12.1 at 2013-10-27 15:59:59 -0700
+Processing by DoisController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 15:59:59 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 126ms (Views: 18.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:26 -0700
+
+
+Started GET "/dois/new" for 172.16.12.1 at 2013-10-27 16:00:32 -0700
+Processing by DoisController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered dois/_form.html.erb (27.3ms)
+  Rendered dois/new.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 43ms (Views: 38.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:33 -0700
+
+
+Started GET "/dois/new" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+Processing by DoisController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered dois/_form.html.erb (25.5ms)
+  Rendered dois/new.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 159ms (Views: 37.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 16:00:58 -0700
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:01:05 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois/new" for 172.16.12.1 at 2013-10-27 16:01:07 -0700
+Processing by DoisController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered dois/_form.html.erb (4.8ms)
+  Rendered dois/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dois/new" for 172.16.12.1 at 2013-10-27 16:04:37 -0700
+Processing by DoisController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered dois/_form.html.erb (85.8ms)
+  Rendered dois/new.html.erb within layouts/application (87.6ms)
+Completed 200 OK in 161ms (Views: 98.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:38 -0700
+
+
+Started GET "/dois/new" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+Processing by DoisController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered dois/_form.html.erb (3.9ms)
+  Rendered dois/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 16:04:39 -0700
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:04:40 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:04:43 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:04:44 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:04:44 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:04:45 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:06:42 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.7ms)
+ERROR: compiling _app_views_layouts_application_html_erb___393249094__625320368 RAISED /home/kgluce/rails/cins465-p6/DoiServer/app/views/layouts/application.html.erb:28: syntax error, unexpected =>
+...y_user_session_path, method: => delete );@output_buffer.safe...
+...                               ^
+Function body:           def _app_views_layouts_application_html_erb___393249094__625320368(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Doi</title>
+    ';@output_buffer.append=( stylesheet_link_tag "application",media: "all","data-turbolinks-track" => true );@output_buffer.safe_append='
+    ';@output_buffer.append=( javascript_include_tag "application","data-turbo-links-track" => true );@output_buffer.safe_append='
+    ';@output_buffer.append=( csrf_meta_tags );@output_buffer.safe_append='
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Doi Server</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+	    <li>';@output_buffer.append=( link_to "Home", "/" );@output_buffer.safe_append='<li>
+	    <li>';@output_buffer.append=( link_to "DOI's", dois_path );@output_buffer.safe_append='</li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+	    <li>'; if user_signed_in? ;@output_buffer.append=( link_to "Logged in as: " + current_user.email, dois_path );@output_buffer.safe_append='</li>
+                <li>';@output_buffer.append=( link_to "Log Out", destroy_user_session_path, method: => delete );@output_buffer.safe_append='</li>
+';		   else 
+@output_buffer.safe_append='		    <li>';@output_buffer.append=( link_to "Sign up", new_user_registration_path );@output_buffer.safe_append='</li>
+ 		    <li>';@output_buffer.append=( link_to "Sign in", new_user_session_path );@output_buffer.safe_append='</li>
+';                 end 
+@output_buffer.safe_append='        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container" style="margin-top:65px;">
+
+      <div class="container">
+';		 if notice 
+@output_buffer.safe_append='		  <div class="alert alert-danger">';@output_buffer.append=( notice );@output_buffer.safe_append='</div>
+';		 end 
+		 if alert 
+@output_buffer.safe_append='	          <div class="alert alert-danger">';@output_buffer.append=( alert );@output_buffer.safe_append='</div>
+';		 end 
+@output_buffer.safe_append='        <h1>DOI Server</h1>
+
+	';@output_buffer.append=( yield );@output_buffer.safe_append='
+
+      </div>
+
+    </div><!-- /.container -->
+  </body>
+</html>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:423:in `_run__999728416__process_action__callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__782071175__call__callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (/home/kgluce/rails/cins465-p6/DoiServer/app/views/layouts/application.html.erb:28: syntax error, unexpected =>
+...y_user_session_path, method: => delete );@output_buffer.safe...
+...                               ^):
+    25:           </ul>
+    26:           <ul class="nav navbar-nav navbar-right">
+    27: 	    <li><% if user_signed_in? %><%= link_to "Logged in as: " + current_user.email, dois_path %></li>
+    28:                 <li><%= link_to "Log Out", destroy_user_session_path, method: => delete %></li>
+    29: 		  <% else %>
+    30: 		    <li><%= link_to "Sign up", new_user_registration_path %></li>
+    31:  		    <li><%= link_to "Sign in", new_user_session_path %></li>
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:423:in `_run__999728416__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__782071175__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.7ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:07:00 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.6ms)
+ERROR: compiling _app_views_layouts_application_html_erb___393249094__626838938 RAISED /home/kgluce/rails/cins465-p6/DoiServer/app/views/layouts/application.html.erb:28: syntax error, unexpected =>
+...y_user_session_path, method: => :delete );@output_buffer.saf...
+...                               ^
+Function body:           def _app_views_layouts_application_html_erb___393249094__626838938(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Doi</title>
+    ';@output_buffer.append=( stylesheet_link_tag "application",media: "all","data-turbolinks-track" => true );@output_buffer.safe_append='
+    ';@output_buffer.append=( javascript_include_tag "application","data-turbo-links-track" => true );@output_buffer.safe_append='
+    ';@output_buffer.append=( csrf_meta_tags );@output_buffer.safe_append='
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Doi Server</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+	    <li>';@output_buffer.append=( link_to "Home", "/" );@output_buffer.safe_append='<li>
+	    <li>';@output_buffer.append=( link_to "DOI's", dois_path );@output_buffer.safe_append='</li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+	    <li>'; if user_signed_in? ;@output_buffer.append=( link_to "Logged in as: " + current_user.email, dois_path );@output_buffer.safe_append='</li>
+                <li>';@output_buffer.append=( link_to "Log Out", destroy_user_session_path, method: => :delete );@output_buffer.safe_append='</li>
+';		   else 
+@output_buffer.safe_append='		    <li>';@output_buffer.append=( link_to "Sign up", new_user_registration_path );@output_buffer.safe_append='</li>
+ 		    <li>';@output_buffer.append=( link_to "Sign in", new_user_session_path );@output_buffer.safe_append='</li>
+';                 end 
+@output_buffer.safe_append='        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container" style="margin-top:65px;">
+
+      <div class="container">
+';		 if notice 
+@output_buffer.safe_append='		  <div class="alert alert-danger">';@output_buffer.append=( notice );@output_buffer.safe_append='</div>
+';		 end 
+		 if alert 
+@output_buffer.safe_append='	          <div class="alert alert-danger">';@output_buffer.append=( alert );@output_buffer.safe_append='</div>
+';		 end 
+@output_buffer.safe_append='        <h1>DOI Server</h1>
+
+	';@output_buffer.append=( yield );@output_buffer.safe_append='
+
+      </div>
+
+    </div><!-- /.container -->
+  </body>
+</html>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:423:in `_run__999728416__process_action__callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__782071175__call__callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (/home/kgluce/rails/cins465-p6/DoiServer/app/views/layouts/application.html.erb:28: syntax error, unexpected =>
+...y_user_session_path, method: => :delete );@output_buffer.saf...
+...                               ^):
+    25:           </ul>
+    26:           <ul class="nav navbar-nav navbar-right">
+    27: 	    <li><% if user_signed_in? %><%= link_to "Logged in as: " + current_user.email, dois_path %></li>
+    28:                 <li><%= link_to "Log Out", destroy_user_session_path, method: => :delete %></li>
+    29: 		  <% else %>
+    30: 		    <li><%= link_to "Sign up", new_user_registration_path %></li>
+    31:  		    <li><%= link_to "Sign in", new_user_session_path %></li>
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:423:in `_run__999728416__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__782071175__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.2ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:08:16 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 90ms
+
+ActionView::Template::Error (undefined local variable or method `delete' for #<#<Class:0xb543d66c>:0xb5560760>):
+    25:           </ul>
+    26:           <ul class="nav navbar-nav navbar-right">
+    27: 	    <li><% if user_signed_in? %><%= link_to "Logged in as: " + current_user.email, dois_path %></li>
+    28:                 <li><%= link_to "Log Out", destroy_user_session_path, :method => delete %></li>
+    29: 		  <% else %>
+    30: 		    <li><%= link_to "Sign up", new_user_registration_path %></li>
+    31:  		    <li><%= link_to "Sign in", new_user_session_path %></li>
+  app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___393249094__626297418'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.2ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.4ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  Rendered dois/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:55 -0700
+
+
+Started DELETE "/users/sign_out" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pfg2HCIqt+gkwboxBsLTfaWjHSfWJ3R2w7flnBqLU04="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 4ms
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 16:08:58 -0700
+
+
+Started POST "/users/sign_in" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eVTpg+8gUO22LkXDw9JYx48K33rlb6kLqb/YmALrq1s=", "user"=>{"email"=>"a@a.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'a@a.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["last_sign_in_at", Sun, 27 Oct 2013 21:16:58 UTC +00:00], ["current_sign_in_at", Sun, 27 Oct 2013 23:09:07 UTC +00:00], ["sign_in_count", 3], ["updated_at", Sun, 27 Oct 2013 23:09:07 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 119ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:07 -0700
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 16:09:13 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 16:09:14 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 16:09:14 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:09:15 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  Rendered dois/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3hTUYmCEHMSUdF0s5JcDRln3Hd2Gs7IbbRT1IdjWGSQ="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-27 16:09:17 -0700
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:09:18 -0700
+Processing by DoisController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-27 16:09:18 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:09:19 -0700
+Processing by DoisController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-27 16:09:19 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 16:09:20 -0700
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-27 16:09:20 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 16:09:20 -0700
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-27 16:09:20 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-27 16:09:21 -0700
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-27 16:09:21 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:09:22 -0700
+Processing by DoisController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-27 16:09:22 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-27 16:09:25 -0700
+Processing by DoisController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-27 16:09:25 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.0ms)
