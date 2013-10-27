@@ -24,7 +24,7 @@
 	    <li><%= link_to "DOI's", dois_path %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-	    <li><% if user_signed_in? %><%= link_to current_user.email, dois_path %></li>
+	    <li><% if user_signed_in? %><%= current_user.email %></li>
 		  <% else %>
 		    <li><%= link_to "Sign up", new_user_registration_path %></li>
  		    <li><%= link_to "Sign in", new_user_session_path %></li>
@@ -33,15 +33,13 @@
       </div>
     </div>
 
-    <div class="container" style="margin-top:65px;">
+    <div class="container">
+	<div class="container">
+		<div class="alert alert-danger"><%= notice %></div>
+	        <div class="alert alert-danger"><%= alert %></div>
+        </div>
 
-      <div class="container">
-		<% if notice %>
-		  <div class="alert alert-danger"><%= notice %></div>
-		<% end %>
-		<% if alert %>
-	          <div class="alert alert-danger"><%= alert %></div>
-		<% end %>
+      <div class="jumbotron">
         <h1>DOI Server</h1>
 
 	<%= yield %>
