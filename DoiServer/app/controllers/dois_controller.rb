@@ -17,7 +17,7 @@ class DoisController < ApplicationController
     @doi = Doi.new
 
     if params[:user_id]
-      @doi.user_id = params[:user_id]
+      @doi.user_id = current_user.id
     else
       # redirect_to root_url
     end
