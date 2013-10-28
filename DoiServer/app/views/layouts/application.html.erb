@@ -21,10 +21,10 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
 	    <li><%= link_to "Home", "/" %><li>
-	    <li><%= link_to "DOI's", dois_path %></li>
+	    <li><%= link_to "ALL DOI's", dois_path %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-	    <li><% if user_signed_in? %><%= link_to "Logged in as: " + current_user.email, dois_path %></li>
+	    <li><% if user_signed_in? %><%= link_to "Logged in as: " + current_user.email, udois_path %></li>
                 <li><%= link_to "Log Out", destroy_user_session_path, :method => 'delete' %></li>
 		  <% else %>
 		    <li><%= link_to "Sign up", new_user_registration_path %></li>
