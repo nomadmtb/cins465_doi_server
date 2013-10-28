@@ -7,6 +7,11 @@ class DoisController < ApplicationController
     @dois = Doi.all
   end
 
+  # This will retrieve the dois for the current user.
+  def udois
+    @dois = Doi.find(:all, :conditions => ["user_id = ?", current_user.id])
+  end
+
   # GET /dois/1
   # GET /dois/1.json
   def show
