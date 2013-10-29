@@ -1,13 +1,13 @@
-<p id="notice"><%= notice %></p>
-
 <h1>DOI <small><%= @doi.name %></small></h1>
+<div class="panel panel-default">
+	<div class="panel-body">
 <table class="table table-condensed table-striped">
 	<thead>
 		<tr>
 			<th>Name</th>
 			<th>Description</th>
 			<th>Owner</th>
-			<th>Last_updated</th>
+			<th>Updated</th>
 			<th>Created</th>
 		</tr>
 	</thead>
@@ -22,8 +22,12 @@
 		</tr>
 	</tbody>
 </table>
+</div>
+</div>
 
-<h3>Reviews</h3>
+<div class="panel panel-default">
+	<div class="panel-heading"><h2>Reviews <small><%= @doi.name %></small></h2></div>
+	<div class="panel-body">
 		<table class="table table-condensed table-striped">
 			<thead>
 				<tr>
@@ -40,6 +44,8 @@
 				<% end %>
 			</tbody>
 		</table>
+	</div>
+</div>
 
 <div class="col-lg-offset-2 col-lg-10">
 	<p>

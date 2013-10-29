@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(version: 20131026200137) do
   create_table "urls", force: true do |t|
     t.text     "url"
     t.integer  "doi_id"
-    t.datetime "date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,13 +1,12 @@
-<h1>All DOI's</h1>
-
+<div class="panel panel-default">
+	<div class="panel-heading"><h2>All DOIs</h2></div>
+	<div class="panel-body">
 <table class="table table-condensed table-striped">
   <thead>
     <tr>
       <th>Name</th>
       <th>Description</th>
       <th>DOI Owner</th>
-      <th></th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -21,19 +20,14 @@
         <td><%= doi.name %></td>
         <td><%= doi.description %></td>
         <td><%= doi.user.email %></td>
-	<td><%= doi.created_at %></td>
 	<td><%= doi.updated_at %></td>
-	<td><%= link_to 'Reviews', reviews_path, :class => 'btn btn-default btn-block' %></td>
-        <td><%= link_to 'Show', doi, :class => 'btn btn-default btn-block' %></td>
+        <td><%= link_to 'View', doi, :class => 'btn btn-default' %></td>
 	<% if current_user.id == doi.user.id %>
-        <td><%= link_to 'Edit', edit_doi_path(doi), :class => 'btn btn-default btn-block' %></td>
-        <td><%= link_to 'Delete', doi, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-default btn-block' %></td>
+        <td><%= link_to 'Edit', edit_doi_path(doi), :class => 'btn btn-default' %></td>
 	<% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Doi', new_doi_path(:user_id => current_user.id), :class => 'btn btn-default' %>
+</div>
+</div
