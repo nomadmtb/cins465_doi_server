@@ -33977,3 +33977,2103 @@ Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 11:30:39 -070
 
 
 Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 11:30:39 -0700
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-29 12:47:27 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 374ms (Views: 279.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:27 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:27 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:27 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:27 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:28 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:28 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:28 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:28 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:28 -0700
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-29 12:47:30 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  [1m[36mUser Load (4.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered dois/index.html.erb within layouts/application (63.5ms)
+Completed 200 OK in 91ms (Views: 74.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 12:47:33 -0700
+Processing by DoisController#udois as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE (user_id = 1)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 62ms (Views: 54.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 12:47:35 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered dois/_form.html.erb (27.2ms)
+  Rendered dois/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 51ms (Views: 47.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"TESTER", "description"=>"TESTER", "url"=>"http://www.lame.com", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Unpermitted parameters: url
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "dois" ("created_at", "description", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 29 Oct 2013 19:47:48 UTC +00:00], ["description", "TESTER"], ["name", "TESTER"], ["updated_at", Tue, 29 Oct 2013 19:47:48 UTC +00:00], ["user_id", 1]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.16.12.188:3000/dois/5
+Completed 302 Found in 18ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/dois/5" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?[0m  [["doi_id", 5]]
+  Rendered dois/show.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 46ms (Views: 39.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 12:47:48 -0700
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 12:47:51 -0700
+Processing by DoisController#udois as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE (user_id = 1)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 30ms (Views: 22.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dois/3" for 172.16.12.1 at 2013-10-29 12:47:55 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?[0m  [["doi_id", 3]]
+  Rendered dois/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 26ms (Views: 20.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-29 12:49:34 -0700
+
+SyntaxError (/home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:84: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__539236889__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.2ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-29 12:49:34 -0700
+
+SyntaxError (/home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:84: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__539236889__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-29 12:49:36 -0700
+
+SyntaxError (/home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:84: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__539236889__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.3ms)
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 12:49:38 -0700
+
+SyntaxError (/home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:84: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__539236889__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.1ms)
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 12:49:38 -0700
+
+SyntaxError (/home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:84: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__539236889__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.5ms)
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 12:49:50 -0700
+Processing by DoisController#udois as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[36mDoi Load (0.4ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE (user_id = 1)[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 187ms (Views: 21.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 12:49:51 -0700
+
+
+Started GET "/urls/new?doi_id=3" for 172.16.12.1 at 2013-10-29 12:49:53 -0700
+Processing by UrlsController#new as HTML
+  Parameters: {"doi_id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered urls/_form.html.erb (6.0ms)
+  Rendered urls/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 48ms (Views: 24.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 12:49:57 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "dois" ("created_at", "updated_at", "user_id") VALUES (?, ?, ?)[0m  [["created_at", Tue, 29 Oct 2013 19:49:57 UTC +00:00], ["updated_at", Tue, 29 Oct 2013 19:49:57 UTC +00:00], ["user_id", 1]]
+  [1m[35m (3.9ms)[0m  commit transaction
+Completed 500 Internal Server Error in 53ms
+
+NoMethodError (undefined method `-' for nil:NilClass):
+  app/controllers/dois_controller.rb:26:in `new'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.1ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 12:49:57 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "dois" ("created_at", "updated_at", "user_id") VALUES (?, ?, ?)[0m  [["created_at", Tue, 29 Oct 2013 19:49:57 UTC +00:00], ["updated_at", Tue, 29 Oct 2013 19:49:57 UTC +00:00], ["user_id", 1]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 11ms
+
+NoMethodError (undefined method `-' for nil:NilClass):
+  app/controllers/dois_controller.rb:26:in `new'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.1ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 12:50:08 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "dois" ("created_at", "updated_at", "user_id") VALUES (?, ?, ?)[0m  [["created_at", Tue, 29 Oct 2013 19:50:08 UTC +00:00], ["updated_at", Tue, 29 Oct 2013 19:50:08 UTC +00:00], ["user_id", 1]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Completed 500 Internal Server Error in 160ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/dois_controller.rb:27:in `new'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (73.7ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 12:50:23 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "dois" ("created_at", "updated_at", "user_id") VALUES (?, ?, ?)[0m  [["created_at", Tue, 29 Oct 2013 19:50:24 UTC +00:00], ["updated_at", Tue, 29 Oct 2013 19:50:24 UTC +00:00], ["user_id", 1]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  Rendered dois/_form.html.erb (6.4ms)
+  Rendered dois/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 233ms (Views: 70.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:24 -0700
+
+
+Started PATCH "/dois/9" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+Processing by DoisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"123", "description"=>"123", "url"=>"fuck", "user_id"=>"1"}, "commit"=>"Update Doi", "id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.6ms)[0m  SELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1  [["id", "9"]]
+Unpermitted parameters: url
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "dois" SET "name" = ?, "description" = ?, "updated_at" = ? WHERE "dois"."id" = 9  [["name", "123"], ["description", "123"], ["updated_at", Tue, 29 Oct 2013 19:50:32 UTC +00:00]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.16.12.188:3000/dois/9
+Completed 302 Found in 19ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/dois/9" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.1ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?[0m  [["doi_id", 9]]
+  Rendered dois/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 27ms (Views: 21.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:33 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:33 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:33 -0700
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 12:50:37 -0700
+Processing by DoisController#udois as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE (user_id = 1)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 72ms (Views: 65.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dois/9" for 172.16.12.1 at 2013-10-29 12:50:39 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?[0m  [["doi_id", 9]]
+  Rendered dois/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 21ms (Views: 15.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/urls" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+Processing by UrlsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT "urls".* FROM "urls"[0m
+  Rendered urls/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 21ms (Views: 16.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 12:50:43 -0700
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-29 12:51:15 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 79ms (Views: 16.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-29 12:51:16 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.4ms)[0m  SELECT "dois".* FROM "dois"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered dois/index.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 77ms (Views: 63.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/dois/5" for 172.16.12.1 at 2013-10-29 12:51:20 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.3ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?  [["doi_id", 5]]
+  Rendered dois/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 58.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 12:52:25 -0700
+Processing by DoisController#udois as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[35mDoi Load (0.3ms)[0m  SELECT "dois".* FROM "dois" WHERE (user_id = 1)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 181ms (Views: 79.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 12:52:27 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered dois/_form.html.erb (4.7ms)
+  Rendered dois/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 12:52:37 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"fuck", "description"=>"fuck", "url"=>"lame ass link", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Unpermitted parameters: url
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "dois" ("created_at", "description", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 29 Oct 2013 19:52:37 UTC +00:00], ["description", "fuck"], ["name", "fuck"], ["updated_at", Tue, 29 Oct 2013 19:52:37 UTC +00:00], ["user_id", 1]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.16.12.188:3000/dois/10
+Completed 302 Found in 42ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/dois/10" for 172.16.12.1 at 2013-10-29 12:52:37 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?[0m  [["doi_id", 10]]
+  Rendered dois/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 30ms (Views: 23.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:38 -0700
+
+
+Started GET "/urls" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+Processing by UrlsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT "urls".* FROM "urls"[0m
+  Rendered urls/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 12:52:43 -0700
+
+
+Started GET "/urls/new" for 172.16.12.1 at 2013-10-29 12:52:46 -0700
+Processing by UrlsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered urls/_form.html.erb (3.3ms)
+  Rendered urls/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-29 12:52:58 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered dois/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 12:53:54 -0700
+Processing by DoisController#udois as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[36mDoi Load (0.4ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE (user_id = 1)[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 118ms (Views: 34.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 12:53:56 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered dois/_form.html.erb (4.4ms)
+  Rendered dois/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 65ms (Views: 61.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 12:54:08 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"TESTER123", "description"=>"TESTER123", "url"=>"http://dude.com", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Unpermitted parameters: url
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "dois" ("created_at", "description", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 29 Oct 2013 19:54:08 UTC +00:00], ["description", "TESTER123"], ["name", "TESTER123"], ["updated_at", Tue, 29 Oct 2013 19:54:08 UTC +00:00], ["user_id", 1]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 16ms
+
+NoMethodError (undefined method `generate_idenfifier' for nil:NilClass):
+  app/controllers/dois_controller.rb:35:in `create'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.8ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 12:55:07 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"TESTER123", "description"=>"TESTER123", "url"=>"http://dude.com", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Unpermitted parameters: url
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "dois" ("created_at", "description", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 29 Oct 2013 19:55:07 UTC +00:00], ["description", "TESTER123"], ["name", "TESTER123"], ["updated_at", Tue, 29 Oct 2013 19:55:07 UTC +00:00], ["user_id", 1]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 99ms
+
+NoMethodError (undefined method `generate_identifier' for nil:NilClass):
+  app/controllers/dois_controller.rb:35:in `create'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (48.1ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.0ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"TESTER123", "description"=>"TESTER123", "url"=>"http://dude.com", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Unpermitted parameters: url
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "dois" ("created_at", "description", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 29 Oct 2013 19:55:15 UTC +00:00], ["description", "TESTER123"], ["name", "TESTER123"], ["updated_at", Tue, 29 Oct 2013 19:55:15 UTC +00:00], ["user_id", 1]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.16.12.188:3000/dois/13
+Completed 302 Found in 131ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/dois/13" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?[0m  [["doi_id", 13]]
+  Rendered dois/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 75ms (Views: 68.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:15 -0700
+
+
+Started GET "/urls" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+Processing by UrlsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT "urls".* FROM "urls"[0m
+  Rendered urls/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 18ms (Views: 13.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 12:55:21 -0700
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-29 12:58:47 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 72ms (Views: 13.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-29 12:58:48 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.3ms)[0m  SELECT "dois".* FROM "dois"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered dois/index.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 70ms (Views: 59.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 12:58:51 -0700
+Processing by DoisController#udois as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[35mDoi Load (0.3ms)[0m  SELECT "dois".* FROM "dois" WHERE (user_id = 1)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 81ms (Views: 73.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 12:58:52 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered dois/_form.html.erb (5.3ms)
+  Rendered dois/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 12:58:57 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"asdasdasd", "description"=>"asdasdasd", "url"=>"asdasdasd", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Unpermitted parameters: url
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `generate_idenfifier' for #<Doi:0x975570c>):
+  app/controllers/dois_controller.rb:33:in `create'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.1ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 13:10:08 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"asdasdasd", "description"=>"asdasdasd", "url"=>"asdasdasd", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Unpermitted parameters: url
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "dois" ("created_at", "description", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 29 Oct 2013 20:10:08 UTC +00:00], ["description", "asdasdasd"], ["name", "asdasdasd"], ["updated_at", Tue, 29 Oct 2013 20:10:08 UTC +00:00], ["user_id", 1]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://172.16.12.188:3000/dois/14
+Completed 302 Found in 177ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/dois/14" for 172.16.12.1 at 2013-10-29 13:10:08 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.2ms)[0m  SELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.4ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?  [["doi_id", 14]]
+  Rendered dois/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 28ms (Views: 22.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:09 -0700
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 13:10:11 -0700
+Processing by DoisController#udois as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[35mDoi Load (0.3ms)[0m  SELECT "dois".* FROM "dois" WHERE (user_id = 1)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 91ms (Views: 83.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-29 13:10:12 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered dois/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 13:10:16 -0700
+Processing by DoisController#udois as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[35mDoi Load (0.3ms)[0m  SELECT "dois".* FROM "dois" WHERE (user_id = 1)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 42ms (Views: 35.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 13:10:17 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered dois/_form.html.erb (4.4ms)
+  Rendered dois/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 13:10:21 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"adasdasd", "description"=>"asdasdasdasd", "url"=>"asdasdasdasd", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Unpermitted parameters: url
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "dois" ("created_at", "description", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 29 Oct 2013 20:10:21 UTC +00:00], ["description", "asdasdasdasd"], ["name", "adasdasd"], ["updated_at", Tue, 29 Oct 2013 20:10:21 UTC +00:00], ["user_id", 1]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://172.16.12.188:3000/dois/15
+Completed 302 Found in 16ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/dois/15" for 172.16.12.1 at 2013-10-29 13:10:21 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.1ms)[0m  SELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1  [["id", "15"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.1ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?  [["doi_id", 15]]
+  Rendered dois/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 63ms (Views: 58.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:21 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:21 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 13:10:22 -0700
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 13:16:56 -0700
+Processing by DoisController#udois as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[35mDoi Load (0.4ms)[0m  SELECT "dois".* FROM "dois" WHERE (user_id = 1)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 187ms (Views: 46.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 13:16:59 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered dois/_form.html.erb (4.4ms)
+  Rendered dois/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"czxczxczxc", "description"=>"zxczxc", "url"=>"zxczxczxc", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Unpermitted parameters: url
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "dois" ("created_at", "description", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 29 Oct 2013 20:17:04 UTC +00:00], ["description", "zxczxc"], ["name", "czxczxczxc"], ["updated_at", Tue, 29 Oct 2013 20:17:04 UTC +00:00], ["user_id", 1]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.16.12.188:3000/dois/16
+Completed 302 Found in 42ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/dois/16" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1[0m  [["id", "16"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?[0m  [["doi_id", 16]]
+  Rendered dois/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 13:17:04 -0700
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 13:20:21 -0700
+Processing by DoisController#udois as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[36mDoi Load (0.5ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE (user_id = 1)[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 190ms (Views: 101.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 13:20:23 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered dois/_form.html.erb (4.6ms)
+  Rendered dois/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 13:20:28 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"rewrwerwer", "description"=>"werwerwer", "url"=>"werwerwer", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "dois" ("created_at", "description", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 29 Oct 2013 20:20:28 UTC +00:00], ["description", "werwerwer"], ["name", "rewrwerwer"], ["updated_at", Tue, 29 Oct 2013 20:20:28 UTC +00:00], ["user_id", 1]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.16.12.188:3000/dois/17
+Completed 302 Found in 42ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/dois/17" for 172.16.12.1 at 2013-10-29 13:20:28 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?[0m  [["doi_id", 17]]
+  Rendered dois/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 13:20:29 -0700
+
+
+Started GET "/urls/" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+Processing by UrlsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT "urls".* FROM "urls"[0m
+  Rendered urls/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:01 -0700
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 13:21:43 -0700
+Processing by DoisController#udois as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[36mDoi Load (0.4ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE (user_id = 1)[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 188ms (Views: 51.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 13:21:45 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered dois/_form.html.erb (4.4ms)
+  Rendered dois/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 13:21:50 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"yuyuyuyu", "description"=>"yuyuyuyuy", "url"=>"uyuyuyuy", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "dois" ("created_at", "description", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 29 Oct 2013 20:21:50 UTC +00:00], ["description", "yuyuyuyuy"], ["name", "yuyuyuyu"], ["updated_at", Tue, 29 Oct 2013 20:21:50 UTC +00:00], ["user_id", 1]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://172.16.12.188:3000/dois/18
+Completed 302 Found in 41ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/dois/18" for 172.16.12.1 at 2013-10-29 13:21:50 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.3ms)[0m  SELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1  [["id", "18"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?  [["doi_id", 18]]
+  Rendered dois/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 71ms (Views: 65.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 13:21:51 -0700
+
+
+Started GET "/udois" for 172.16.12.1 at 2013-10-29 13:22:26 -0700
+Processing by DoisController#udois as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from udois at /home/kgluce/rails/cins465-p6/DoiServer/app/controllers/dois_controller.rb:12)
+  [1m[35mDoi Load (0.4ms)[0m  SELECT "dois".* FROM "dois" WHERE (user_id = 1)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered dois/udois.html.erb within layouts/application (88.9ms)
+Completed 200 OK in 191ms (Views: 99.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/dois/new?user_id=1" for 172.16.12.1 at 2013-10-29 13:22:27 -0700
+Processing by DoisController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered dois/_form.html.erb (4.8ms)
+  Rendered dois/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/dois" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+Processing by DoisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kTH80yI/RioJ3phv5i0YWEJAgv061jmafbP/b3Utes=", "doi"=>{"name"=>"vbvbvbvbvbv", "description"=>"vbvbvbvbvbvb", "url"=>"HELLO!!!", "user_id"=>"1"}, "commit"=>"Create Doi"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "dois" ("created_at", "description", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 29 Oct 2013 20:22:36 UTC +00:00], ["description", "vbvbvbvbvbvb"], ["name", "vbvbvbvbvbv"], ["updated_at", Tue, 29 Oct 2013 20:22:36 UTC +00:00], ["user_id", 1]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "urls" ("created_at", "doi_id", "updated_at", "url") VALUES (?, ?, ?, ?)  [["created_at", Tue, 29 Oct 2013 20:22:36 UTC +00:00], ["doi_id", 19], ["updated_at", Tue, 29 Oct 2013 20:22:36 UTC +00:00], ["url", "HELLO!!!"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.16.12.188:3000/dois/19
+Completed 302 Found in 54ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/dois/19" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1[0m  [["id", "19"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?[0m  [["doi_id", 19]]
+  Rendered dois/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 29ms (Views: 23.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:36 -0700
+
+
+Started GET "/urls" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+Processing by UrlsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT "urls".* FROM "urls"[0m
+  Rendered urls/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-29 13:22:40 -0700
+
+
+Started GET "/urls/6" for 172.16.12.1 at 2013-10-29 13:23:13 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered urls/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-29 13:23:16 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 57ms (Views: 53.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-29 13:23:18 -0700
+Processing by DoisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.3ms)[0m  SELECT "dois".* FROM "dois"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered dois/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dois/3" for 172.16.12.1 at 2013-10-29 13:23:21 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.1ms)[0m  SELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mReview Load (0.1ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?  [["doi_id", 3]]
+  Rendered dois/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 19ms (Views: 14.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-29 13:23:22 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-29 13:23:26 -0700
+Processing by DoisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered dois/index.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 87ms (Views: 83.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dois/12" for 172.16.12.1 at 2013-10-29 13:23:27 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.1ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1[0m  [["id", "12"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?[0m  [["doi_id", 12]]
+  Rendered dois/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 19ms (Views: 14.7ms | ActiveRecord: 0.7ms)

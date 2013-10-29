@@ -31,6 +31,14 @@ class DoisController < ApplicationController
   def create
     @doi = Doi.new(doi_params)
 
+    if @doi.save
+    puts "******************"
+	    @url = Url.new
+	    @url.doi_id=@doi.id
+	    @url.url = params[:doi][:url]
+	    @url.save
+    end
+
     respond_to do |format|
       if @doi.save
         format.html { redirect_to @doi, notice: 'Doi was successfully created.' }
@@ -74,6 +82,6 @@ class DoisController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def doi_params
-      params.require(:doi).permit(:name, :description, :user_id)
+      params.require(:doi).permit(:name, :description, :user_id, :url)
     end
 end
