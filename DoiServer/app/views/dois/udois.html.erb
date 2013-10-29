@@ -10,6 +10,7 @@
       <th></th>
       <th></th>
       <th></th>
+      <th></th>
     </tr>
   </thead>
 
@@ -19,6 +20,7 @@
         <td><%= doi.name %></td>
         <td><%= doi.description %></td>
         <td><%= doi.user.email %></td>
+	<td><%= link_to 'Add URL', new_url_path(:doi_id => doi.id), :class => 'btn btn-default btn-block' %></td>
         <td><%= link_to 'Show', doi, :class => 'btn btn-default btn-block' %></td>
         <td><%= link_to 'Edit', edit_doi_path(doi), :class => 'btn btn-default btn-block' %></td>
         <td><%= link_to 'Destroy', doi, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-default btn-block' %></td>

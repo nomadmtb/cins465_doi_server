@@ -14,7 +14,7 @@ class UrlsController < ApplicationController
 
   # GET /urls/new
   def new
-    @url = Url.new
+    @url = Url.new(:doi_id => params[:doi_id])
   end
 
   # GET /urls/1/edit

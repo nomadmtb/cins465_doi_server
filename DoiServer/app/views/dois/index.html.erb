@@ -10,7 +10,6 @@
       <th></th>
       <th></th>
       <th></th>
-      <th></th>
     </tr>
   </thead>
 
@@ -21,10 +20,8 @@
         <td><%= doi.description %></td>
         <td><%= doi.user.email %></td>
 	<td><%= doi.updated_at %></td>
-        <td><%= link_to 'View', doi, :class => 'btn btn-default' %></td>
-	<% if current_user.id == doi.user.id %>
-        <td><%= link_to 'Edit', edit_doi_path(doi), :class => 'btn btn-default' %></td>
-	<% end %>
+        <td><%= link_to 'View', doi, :class => 'btn btn-default btn-block' %></td>
+	<td><%= link_to 'Review It', new_review_path(:doi_id => doi.id, :user_id => current_user.id), :class => 'btn btn-default btn-block' %></td>
       </tr>
     <% end %>
   </tbody>

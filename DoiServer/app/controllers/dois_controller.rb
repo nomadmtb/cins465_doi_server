@@ -19,7 +19,7 @@ class DoisController < ApplicationController
 
   # GET /dois/new
   def new
-    @doi = Doi.new(:user_id => params[:user_id]);
+    @doi = Doi.new(:user_id => params[:user_id])
   end
 
   # GET /dois/1/edit
