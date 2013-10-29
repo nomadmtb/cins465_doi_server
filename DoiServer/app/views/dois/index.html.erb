@@ -9,6 +9,9 @@
       <th></th>
       <th></th>
       <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
 
@@ -18,9 +21,14 @@
         <td><%= doi.name %></td>
         <td><%= doi.description %></td>
         <td><%= doi.user.email %></td>
+	<td><%= doi.created_at %></td>
+	<td><%= doi.updated_at %></td>
+	<td><%= link_to 'Reviews', reviews_path, :class => 'btn btn-default btn-block' %></td>
         <td><%= link_to 'Show', doi, :class => 'btn btn-default btn-block' %></td>
+	<% if current_user.id == doi.user.id %>
         <td><%= link_to 'Edit', edit_doi_path(doi), :class => 'btn btn-default btn-block' %></td>
-        <td><%= link_to 'Destroy', doi, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-default btn-block' %></td>
+        <td><%= link_to 'Delete', doi, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-default btn-block' %></td>
+	<% end %>
       </tr>
     <% end %>
   </tbody>
