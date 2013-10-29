@@ -1,6 +1,7 @@
 <!-- Show per-user dois -->
-<h1>Your DOI's</h1>
-
+<div class="panel panel-default">
+	<div class="panel-heading"><h2>User Specific DOI's</h2></div>
+	<div class="panel-body">
 <table class="table table-condensed table-striped">
   <thead>
     <tr>
@@ -26,7 +27,7 @@
     <% end %>
   </tbody>
 </table>
+</div>
+</div>
 
-<br>
-
-<%= link_to 'New Doi', new_doi_path, :class => 'btn btn-default' %>
+<%= link_to 'New Doi', new_doi_path(:user_id => current_user.id), :class => 'btn btn-default' %>
