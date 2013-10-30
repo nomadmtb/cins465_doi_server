@@ -33,6 +33,7 @@ class DoisController < ApplicationController
 
   # GET /dois/1/edit
   def edit
+    @doi.url = Url.where("doi_id = ?", params[:id]).last.url
   end
 
   # POST /dois
@@ -61,6 +62,15 @@ class DoisController < ApplicationController
   # PATCH/PUT /dois/1
   # PATCH/PUT /dois/1.json
   def update
+
+    @url = Url.new
+    @url.doi_id = @doi.id
+    @url.url = params[:doi][:url]
+
+    if !@url.save
+	redirect_to @doi, alert: 'Failed to update the URL, please try again.'
+    end
+
     respond_to do |format|
       if @doi.update(doi_params)
         format.html { redirect_to @doi, notice: 'Doi was successfully updated.' }

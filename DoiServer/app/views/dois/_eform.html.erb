@@ -1,0 +1,43 @@
+<%= form_for(@doi, :html => {:class => 'form-horizontal'}) do |f| %>
+<% if @doi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@doi.errors.count, "error") %> prohibited this doi from being saved:</h2>
+
+      <ul>
+      <% @doi.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="containter">
+  <div class="col-md-12">
+
+  <div class="input-group input-group-md">
+	  <span class="input-group-addon"><%= f.label :name %></span>
+	  <%= f.text_field :name, :class => 'form-control' %>
+  </div>
+  <br>
+  <div class="input-group input-group-md">
+	  <span class="input-group-addon"><%= f.label "Desc" %></span>
+	  <%= f.text_field :description, :class => 'form-control' %>
+  </div>
+  <br>
+  <div class="input-group input-group-md">
+	  <span class="input-group-addon"><%= f.label "Url" %></span>
+	  <%= f.text_field :url, :class => 'form-control' %>
+  </div>
+
+</div>
+
+  <%= f.hidden_field :user_id %>
+  <%= f.hidden_field :id %>
+
+  </div>
+
+  </div>
+  <div class="panel-footer">
+  <div class="actions">
+	  <%= f.submit :class => 'btn btn-primary' %>
+<% end %>
