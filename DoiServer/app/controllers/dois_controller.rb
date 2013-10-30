@@ -10,6 +10,9 @@ class DoisController < ApplicationController
   # Will perform our search.
   def search
 	  @dois = Doi.where("name = ?", params[:query])
+	  if @dois.count == 0
+		  redirect_to root_path, :alert => 'No DOIs found'
+	  end
   end
 
   # This will retrieve the dois for the current user.
