@@ -32,7 +32,6 @@ class DoisController < ApplicationController
     @doi = Doi.new(doi_params)
 
     if @doi.save
-    puts "******************"
 	    @url = Url.new
 	    @url.doi_id=@doi.id
 	    @url.url = params[:doi][:url]

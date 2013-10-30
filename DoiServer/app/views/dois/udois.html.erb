@@ -1,34 +1,36 @@
-<div class="panel panel-default">
+<div class="panel panel-info">
 	<div class="panel-heading"><h2>User DOIs <small><%= current_user.email %></small></h2></div>
 	<div class="panel-body">
-<table class="table table-condensed table-striped">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>DOI Owner</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+		<table class="table table-condensed table-striped">
+  			<thead>
+    				<tr>
+      					<th>Name</th>
+      					<th>Description</th>
+      					<th>Current URL</th>
+      					<th></th>
+      					<th></th>
+      					<th></th>
+      					<th></th>
+    				</tr>
+  			</thead>
 
-  <tbody>
-    <% @dois.each do |doi| %>
-      <tr>
-        <td><%= doi.name %></td>
-        <td><%= doi.description %></td>
-        <td><%= doi.user.email %></td>
-	<td><%= link_to 'Add URL', new_url_path(:doi_id => doi.id), :class => 'btn btn-default btn-block' %></td>
-        <td><%= link_to 'Show', doi, :class => 'btn btn-default btn-block' %></td>
-        <td><%= link_to 'Edit', edit_doi_path(doi), :class => 'btn btn-default btn-block' %></td>
-        <td><%= link_to 'Destroy', doi, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-default btn-block' %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-</div>
+  			<tbody>
+    				<% @dois.each do |doi| %>
+      					<tr>
+        					<td><%= doi.name %></td>
+        					<td><%= doi.description %></td>
+        					<td><%= doi.urls.last.url %></td>
+						<td><%= link_to 'Update URL', new_url_path(:doi_id => doi.id), :class => 'btn btn-default btn-block' %></td>
+        					<td><%= link_to 'Show', doi, :class => 'btn btn-default btn-block' %></td>
+        					<td><%= link_to 'Edit', edit_doi_path(doi), :class => 'btn btn-default btn-block' %></td>
+        					<td><%= link_to 'Destroy', doi, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-default btn-block' %></td>
+      					</tr>
+    				<% end %>
+  			</tbody>
+		</table>
+		<div class="panel-footer">
+			<%= link_to 'New Doi', new_doi_path(:user_id => current_user.id), :class => 'btn btn-default' %>
+		</div>
+	</div>
 </div>
 
-<%= link_to 'New Doi', new_doi_path(:user_id => current_user.id), :class => 'btn btn-default' %>
