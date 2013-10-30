@@ -1,5 +1,6 @@
 class DoisController < ApplicationController
   before_action :set_doi, only: [:show, :edit, :update, :destroy]
+  before_action :check_user!, except: [:search]
 
   # GET /dois
   # GET /dois.json
