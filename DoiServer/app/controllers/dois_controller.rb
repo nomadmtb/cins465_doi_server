@@ -50,10 +50,11 @@ class DoisController < ApplicationController
 	    @url.doi_id=@doi.id
 	    if params[:doi][:url] =~ /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
 		    @url.url = params[:doi][:url]
+		    format.html { render action: 'new' }
+	    	    @url.save
 	    else
-		    @url.url = 'INVALID URL'
+		    format.html { render action: 'new' }
 	    end
-	    @url.save
     end
 
     respond_to do |format|
