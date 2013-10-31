@@ -1,3 +1,10 @@
+<div class="container">
+	<p class="text-center">
+	<% if !current_user %>
+		<h3>You can only search for DOIs <small>Login and you can do more!</small></h3>
+	<% end %>
+  </p>
+</div>
 <div class="jumbotron"><div class="page-header"><h1>DOI Server</h1></div>
 <p>Welcome to the DOI Server. With the DOI Server, you will be able to create, view, review and modify
 all types of DOIs. This is a free service brought to you by Professor Tyson's CINS 465 class. There are a
@@ -10,15 +17,4 @@ will be useful for you.</p>
 <p><strong>4.</strong> Registered users can review a DOI</p>
 <p><strong>5.</strong> Registered users can view the details/history/reviews of any DOI.</p>
 <br>
-
-<div class="container">
-<div class="col-md-4">
-	<p class="text-center">
-	<% if !current_user %>
-    		<a href="/users/sign_in" class="btn btn-primary btn-lg btn-block">Sign In</a>
-		<a href="/users/sign_up" class="btn btn-default btn-lg btn-block">Sign Up</a>
-	<% end %>
-  </p>
-</div>
-</div>
 </div>

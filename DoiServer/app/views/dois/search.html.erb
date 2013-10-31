@@ -6,7 +6,8 @@
     				<tr>
       					<th>Name</th>
       					<th>Description</th>
-      					<th>Current URL</th>
+					<th>Current URL</th>
+					<th></th>
     				</tr>
   			</thead>
 
@@ -15,7 +16,10 @@
       					<tr>
         					<td><%= doi.name %></td>
         					<td><%= doi.description %></td>
-        					<td><%= doi.urls.last.url %></td>
+						<td><%= doi.urls.last.url %></td>
+						<% if current_user %>
+							<td><%= link_to 'View', doi, :class => 'btn btn-default btn-block' %></td>
+						<% end %>
       					</tr>
     				<% end %>
   			</tbody>

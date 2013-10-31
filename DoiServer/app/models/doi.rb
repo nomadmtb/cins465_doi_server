@@ -5,4 +5,8 @@ class Doi < ActiveRecord::Base
 	has_many :reviews, :dependent => :destroy
 	attr_accessor :url
 
+	validates :name, :presence => true
+	validates :description, :presence => true
+	validates_uniqueness_of :name
+
 end

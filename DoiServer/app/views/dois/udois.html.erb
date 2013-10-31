@@ -1,12 +1,12 @@
 <div class="panel panel-info">
-	<div class="panel-heading"><h2>User DOIs <small><%= current_user.email %></small></h2></div>
+	<div class="panel-heading"><h2>User DOIs <small>[ <%= current_user.email %> ]</small></h2></div>
 	<div class="panel-body">
 		<table class="table table-condensed table-striped">
   			<thead>
     				<tr>
       					<th>Name</th>
-      					<th>Description</th>
       					<th>Current URL</th>
+      					<th>Description</th>
       					<th></th>
       					<th></th>
       					<th></th>
@@ -15,11 +15,11 @@
   			</thead>
 
   			<tbody>
-    				<% @dois.each do |doi| %>
+    				<% @dois.reverse!.each do |doi| %>
       					<tr>
-        					<td><%= doi.name %></td>
+						<td><%= doi.name %></td>
+						<td><%= link_to(doi.urls.last.url,doi.urls.last.url, url_options = {:confirm => 'You will be leaving DOI Server. Continue?'})  %></td>
         					<td><%= doi.description %></td>
-        					<td><%= doi.urls.last.url %></td>
 						<td><%= link_to 'Update URL', new_url_path(:doi_id => doi.id), :class => 'btn btn-default btn-block' %></td>
         					<td><%= link_to 'Show', doi, :class => 'btn btn-default btn-block' %></td>
         					<td><%= link_to 'Edit', edit_doi_path(doi), :class => 'btn btn-default btn-block' %></td>

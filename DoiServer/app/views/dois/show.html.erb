@@ -28,6 +28,30 @@
 </div>
 
 <div class="panel panel-info">
+	<div class="panel-heading"><h2>URL History <small>[ <%= @doi.name %> ]</small></h2></div>
+	<div class="panel-body">
+		<table class="table table-condensed table-striped">
+			<thead>
+				<tr>
+					<th>URL</th>
+					<th>Updated</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<% @doi.urls.reverse!.each do |url| %>
+					<tr>
+						<td><%= url.url %></td>
+						<td><%= url.created_at %></td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
+	<div class="panel-footer">
+	</div>
+</div>
+<div class="panel panel-info">
 	<div class="panel-heading"><h2>Reviews <small>[ <%= @doi.name %> ]</small></h2></div>
 	<div class="panel-body">
 		<table class="table table-condensed table-striped">
@@ -39,7 +63,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<% @doi.reviews.each do |review| %>
+				<% @doi.reviews.reverse!.each do |review| %>
 					<tr>
 						<td><%= review.comment %></td>
 						<td><%= review.user.email %></td>
@@ -62,4 +86,3 @@
 		<%= link_to 'Back', dois_path, :class => 'btn btn-default' %>
 	</p>
 </div>
-

@@ -1,6 +1,6 @@
 class DoisController < ApplicationController
-  before_action :set_doi, only: [:show, :edit, :update, :destroy]
   before_action :check_user!, except: [:search]
+  before_action :set_doi, only: [:show, :edit, :update, :destroy]
 
   # GET /dois
   # GET /dois.json
@@ -44,7 +44,11 @@ class DoisController < ApplicationController
     if @doi.save
 	    @url = Url.new
 	    @url.doi_id=@doi.id
-	    @url.url = params[:doi][:url]
+	    if params[:doi][:url] =~ /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+		    @url.url = params[:doi][:url]
+	    else
+		    @url.url = 'INVALID URL'
+	    end
 	    @url.save
     end
 
@@ -65,7 +69,13 @@ class DoisController < ApplicationController
 
     @url = Url.new
     @url.doi_id = @doi.id
-    @url.url = params[:doi][:url]
+
+    if params[:doi][:url] =~ /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+    	@url.url = params[:doi][:url]
+    else
+	redirect_to @doi, alert: 'A full URL is required. Ex: http://www.google.com'
+	return
+    end
 
     if !@url.save
 	redirect_to @doi, alert: 'Failed to update the URL, please try again.'

@@ -14,10 +14,10 @@
   </thead>
 
   <tbody>
-    <% @dois.each do |doi| %>
+    <% @dois.reverse!.each do |doi| %>
       <tr>
         <td><%= doi.name %></td>
-        <td><%= doi.urls.last.url %></td>
+	<td><%= link_to(doi.urls.last.url,doi.urls.last.url, url_options = {:confirm => 'You will be leaving DOI Server. Continue?'})  %></td>
         <td><%= doi.user.email %></td>
 	<td><%= doi.updated_at %></td>
         <td><%= link_to 'View', doi, :class => 'btn btn-default btn-block' %></td>
