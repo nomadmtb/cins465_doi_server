@@ -7,4 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Adding Users to the Database.
-User.create([{ email: 'kyle@gmail.com' }, { password: 'password' }, { password_confirmation: 'password' }])
+puts 'Adding Users'
+kyle = User.create :email => 'kyle@gmail.com', :password => 'password', :password_confirmation => 'password'
