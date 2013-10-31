@@ -73895,3 +73895,2611 @@ Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:55:19 -070
 
 
 Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:55:19 -0700
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (128.3ms)
+Completed 200 OK in 305ms (Views: 277.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:01 -0700
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:32 -0700
+
+
+Started GET "/dois/2/edit" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+Processing by DoisController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDoi Load (0.5ms)[0m  SELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1  [["id", "2"]]
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 95ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:33 -0700
+
+
+Started GET "/dois/4" for 172.16.12.1 at 2013-10-31 10:57:34 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDoi Load (0.2ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE "dois"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUrl Load (3.4ms)[0m  SELECT "urls".* FROM "urls" WHERE "urls"."doi_id" = ? ORDER BY "urls"."id" DESC LIMIT 1  [["doi_id", 4]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUrl Load (0.3ms)[0m  SELECT "urls".* FROM "urls" WHERE "urls"."doi_id" = ?  [["doi_id", 4]]
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."doi_id" = ?[0m  [["doi_id", 4]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered dois/show.html.erb within layouts/application (136.1ms)
+Completed 200 OK in 157ms (Views: 147.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:35 -0700
+
+
+Started DELETE "/users/sign_out" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wPkW/LMD5QBK3tRsOxft42lM/8wa/WzdKqt5NGXz7z4="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 29ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 84ms (Views: 83.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:37 -0700
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 58ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/dois/2/edit" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+Processing by DoisController#edit as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://172.16.12.188:3000/
+Filter chain halted as :check_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:39 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:40 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:40 -0700
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+
+
+Started GET "/dois/2/edit" for 172.16.12.1 at 2013-10-31 10:57:43 -0700
+Processing by DoisController#edit as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://172.16.12.188:3000/
+Filter chain halted as :check_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:44 -0700
+
+
+Started GET "/dois/4" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+Processing by DoisController#show as HTML
+  Parameters: {"id"=>"4"}
+Redirected to http://172.16.12.188:3000/
+Filter chain halted as :check_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:45 -0700
+
+
+Started GET "/search?utf8=%E2%9C%93&query%5B%5D=1121154" for 172.16.12.1 at 2013-10-31 10:57:50 -0700
+Processing by DoisController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>["1121154"]}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "dois" WHERE (name = '1121154')
+  [1m[36mDoi Load (0.3ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE (name = '1121154')[0m
+  [1m[35mUrl Load (0.2ms)[0m  SELECT "urls".* FROM "urls" WHERE "urls"."doi_id" = ? ORDER BY "urls"."id" DESC LIMIT 1  [["doi_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "urls".* FROM "urls" WHERE "urls"."doi_id" = ? ORDER BY "urls"."id" DESC LIMIT 1[0m  [["doi_id", 2]]
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from block in _app_views_dois_search_html_erb__428389812_99713990 at /home/kgluce/rails/cins465-p6/DoiServer/app/views/dois/search.html.erb:19)
+  Rendered dois/search.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:50 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:50 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:57:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:50 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:50 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:50 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:57:50 -0700
+
+
+Started GET "/search?utf8=%E2%9C%93&query%5B%5D=1121154" for 172.16.12.1 at 2013-10-31 10:57:57 -0700
+Processing by DoisController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>["1121154"]}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "dois" WHERE (name = '1121154')
+  [1m[36mDoi Load (0.4ms)[0m  [1mSELECT "dois".* FROM "dois" WHERE (name = '1121154')[0m
+  [1m[35mUrl Load (0.2ms)[0m  SELECT "urls".* FROM "urls" WHERE "urls"."doi_id" = ? ORDER BY "urls"."id" DESC LIMIT 1  [["doi_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "urls".* FROM "urls" WHERE "urls"."doi_id" = ? ORDER BY "urls"."id" DESC LIMIT 1[0m  [["doi_id", 2]]
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from block in _app_views_dois_search_html_erb__428389812_88273790 at /home/kgluce/rails/cins465-p6/DoiServer/app/views/dois/search.html.erb:19)
+  Rendered dois/search.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 35ms (Views: 30.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:58 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-31 10:57:59 -0700
+Processing by DoisController#index as HTML
+Redirected to http://172.16.12.188:3000/
+Filter chain halted as :check_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:57:59 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 10:58:00 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-31 10:58:01 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 10:58:01 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-31 10:58:02 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 10:58:02 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (45.6ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-31 10:58:03 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 10:58:03 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.16.12.1 at 2013-10-31 10:58:03 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dois" for 172.16.12.1 at 2013-10-31 10:58:05 -0700
+Processing by DoisController#index as HTML
+Redirected to http://172.16.12.188:3000/
+Filter chain halted as :check_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:58:05 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:58:10 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:11 -0700
+
+
+Started GET "/search?utf8=%E2%9C%93&query%5B%5D=" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+Processing by DoisController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>[""]}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "dois" WHERE (name = '')
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:35 -0700
+
+
+Started GET "/search?utf8=%E2%9C%93&query%5B%5D=" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+Processing by DoisController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>[""]}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "dois" WHERE (name = '')[0m
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:37 -0700
+
+
+Started GET "/search?utf8=%E2%9C%93&query%5B%5D=" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+Processing by DoisController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>[""]}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "dois" WHERE (name = '')
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:38 -0700
+
+
+Started GET "/search?utf8=%E2%9C%93&query%5B%5D=" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+Processing by DoisController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>[""]}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "dois" WHERE (name = '')[0m
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/search?utf8=%E2%9C%93&query%5B%5D=" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+Processing by DoisController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>[""]}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "dois" WHERE (name = '')
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:39 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/search?utf8=%E2%9C%93&query%5B%5D=" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+Processing by DoisController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>[""]}
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "dois" WHERE (name = '')[0m
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/search?utf8=%E2%9C%93&query%5B%5D=" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+Processing by DoisController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>[""]}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "dois" WHERE (name = '')
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:40 -0700
+
+
+Started GET "/search?utf8=%E2%9C%93&query%5B%5D=" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+Processing by DoisController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>[""]}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "dois" WHERE (name = '')[0m
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+
+
+Started GET "/search?utf8=%E2%9C%93&query%5B%5D=" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+Processing by DoisController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>[""]}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "dois" WHERE (name = '')
+Redirected to http://172.16.12.188:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.16.12.1 at 2013-10-31 10:58:41 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 10:58:42 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:06:08 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:24 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 72ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:08:44 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:35 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 112ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:47 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:09:57 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 83ms (Views: 80.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:10:42 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:10 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:11:22 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:23 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 32ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:11:30 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:06 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:12:21 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:21 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:21 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:21 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:21 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:22 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:22 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:22 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:22 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:22 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:29 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 30ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:12:52 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:22 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:13:36 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:37 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:13:45 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 40ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:05 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 32ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:14:20 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 32ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:21 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:15:40 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:16:06 -0700
+Processing by Devise::RegistrationsController#new as HTML
+ERROR: compiling _app_views_devise_registrations_new_html_erb__254633293_88878900 RAISED /home/kgluce/rails/cins465-p6/DoiServer/app/views/devise/registrations/new.html.erb:20: syntax error, unexpected tSTRING_BEG, expecting ')'
+..._field :password_confirmation 'pwd', :class => 'form-control...
+...                               ^
+/home/kgluce/rails/cins465-p6/DoiServer/app/views/devise/registrations/new.html.erb:20: syntax error, unexpected ',', expecting ')'
+...d :password_confirmation 'pwd', :class => 'form-control' );@...
+...                               ^
+Function body:           def _app_views_devise_registrations_new_html_erb__254633293_88878900(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "devise/registrations/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<h1 class="text-center">Sign up</h1>
+
+';@output_buffer.append=  form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| @output_buffer.safe_append='
+  ';@output_buffer.append=( devise_error_messages! );@output_buffer.safe_append='
+
+  <div style="width:400px;margin:0 auto">
+  <div class=\'well well-md\'>
+  <div class="input-group input-group-md">
+	  <span class="input-group-addon">';@output_buffer.append=( f.label :email );@output_buffer.safe_append='</span>
+	  ';@output_buffer.append=( f.email_field :email, :autofocus => true, :class => 'form-control' );@output_buffer.safe_append='
+  </div><br>
+
+  <div class="input-group input-group-md">
+	  <span class="input-group-addon">';@output_buffer.append=( f.label :password );@output_buffer.safe_append='</span>
+	  ';@output_buffer.append=( f.password_field :password, :class => 'form-control' );@output_buffer.safe_append='
+  </div><br>
+
+  <div class="input-group input-group-md">
+	  <span class="input-group-addon">';@output_buffer.append=( f.label :password_confirmation );@output_buffer.safe_append='</span>
+	  ';@output_buffer.append=( f.password_field :password_confirmation 'pwd', :class => 'form-control' );@output_buffer.safe_append='
+  </div><br>
+
+  <div>';@output_buffer.append=( f.submit "Sign up", :class => 'btn btn-primary' );@output_buffer.safe_append='</div>
+'; end 
+@output_buffer.safe_append='
+</div>
+</div>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/responder.rb:233:in `default_render'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/responder.rb:161:in `to_html'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/responder.rb:154:in `respond'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/responder.rb:147:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/mime_responds.rb:330:in `respond_with'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.1.1/app/controllers/devise/registrations_controller.rb:8:in `new'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:433:in `_run__581720803__process_action__callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/mapper.rb:44:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__526540633__call__callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered devise/registrations/new.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (/home/kgluce/rails/cins465-p6/DoiServer/app/views/devise/registrations/new.html.erb:20: syntax error, unexpected tSTRING_BEG, expecting ')'
+..._field :password_confirmation 'pwd', :class => 'form-control...
+...                               ^
+/home/kgluce/rails/cins465-p6/DoiServer/app/views/devise/registrations/new.html.erb:20: syntax error, unexpected ',', expecting ')'
+...d :password_confirmation 'pwd', :class => 'form-control' );@...
+...                               ^):
+    17: 
+    18:   <div class="input-group input-group-md">
+    19: 	  <span class="input-group-addon"><%= f.label :password_confirmation %></span>
+    20: 	  <%= f.password_field :password_confirmation 'pwd', :class => 'form-control' %>
+    21:   </div><br>
+    22: 
+    23:   <div><%= f.submit "Sign up", :class => 'btn btn-primary' %></div>
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/responder.rb:233:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/responder.rb:161:in `to_html'
+  actionpack (4.0.0) lib/action_controller/metal/responder.rb:154:in `respond'
+  actionpack (4.0.0) lib/action_controller/metal/responder.rb:147:in `call'
+  actionpack (4.0.0) lib/action_controller/metal/mime_responds.rb:330:in `respond_with'
+  devise (3.1.1) app/controllers/devise/registrations_controller.rb:8:in `new'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:433:in `_run__581720803__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/mapper.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__526540633__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kgluce/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (17.9ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/kgluce/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.5ms)
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:36 -0700
+
+
+Started GET "/users/sign_up" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 66ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/urls.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/dois.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/dois.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/home.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/urls.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 172.16.12.1 at 2013-10-31 11:16:45 -0700
