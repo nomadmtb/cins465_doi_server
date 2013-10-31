@@ -6,8 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# Adding Users to the Database.
-puts 'Adding Users'
 kyle = User.create :email => 'kyle@gmail.com', :password => 'password', :password_confirmation => 'password'
 frank = User.create :email => 'frank@gmail.com', :password => 'password', :password_confirmation => 'password'
 annie = User.create :email => 'annie@gmail.com', :password => 'password', :password_confirmation => 'password'
@@ -63,9 +61,9 @@ url_30 = Url.create :url => 'http://www.ecst.csuchico.edu', :doi_id => 9
 url_31 = Url.create :url => 'http://www.google.com', :doi_id => 9
 url_32 = Url.create :url => 'http://www.ratemyprofessor.com', :doi_id => 9
 
-doi_10 = Doi.create :name => '8870091872', :user_id => 1, :description => 'Power on inurl:"download.php?file="'
+doi_10 = Doi.create :name => '8870091872', :user_id => 1, :description => 'Power of inurl:"download.php?file="'
 url_33 = Url.create :url => 'http://www.thehackernews.com', :doi_id => 10
-url_34 = Url.create :url => 'http://www.google.com?q=inurl', :doi_id => 10
+url_34 = Url.create :url => 'http://www.google.com', :doi_id => 10
 url_35 = Url.create :url => 'http://www.thehackernews.com', :doi_id => 10
 
 review_1_1 = Review.create :doi_id => 1, :comment => 'This DOI is a pile of garbage!', :user_id => 5

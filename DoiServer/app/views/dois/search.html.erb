@@ -5,8 +5,8 @@
   			<thead>
     				<tr>
       					<th>DOI</th>
-      					<th>Description</th>
 					<th>Current URL</th>
+      					<th>Description</th>
 					<th></th>
     				</tr>
   			</thead>
@@ -15,8 +15,8 @@
     				<% @dois.each do |doi| %>
       					<tr>
         					<td><%= doi.name %></td>
-        					<td><%= doi.description %></td>
 						<td><%= link_to(doi.urls.last.url,doi.urls.last.url, url_options = {:confirm => 'You are leaving DOI server. Continue?'}) %></td>
+        					<td><%= doi.description %></td>
 						<% if current_user %>
 							<td><%= link_to 'View', doi, :class => 'btn btn-default btn-block' %></td>
 						<% end %>
