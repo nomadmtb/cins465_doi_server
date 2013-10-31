@@ -24,7 +24,10 @@
 		</table>
 	</div>
 	<div class="panel-footer">
-		<%= link_to 'Edit DOI', edit_doi_path(@doi), :class => 'btn btn-default' %> </div>
+		<% if current_user.id == @doi.user_id %>
+			<%= link_to 'Edit DOI', edit_doi_path(@doi), :class => 'btn btn-default' %>
+		<% end %>
+	</div>
 </div>
 
 <div class="panel panel-info">
@@ -76,12 +79,4 @@
 	<div class="panel-footer">
 		<%= link_to 'Add Review', new_review_path(:doi_id => @doi.id, :user_id => current_user.id), :class => 'btn btn-default' %>
 	</div>
-</div>
-
-<div class="col-lg-offset-2 col-lg-10">
-	<p>
-		<% if @doi.user.id == current_user.id %>
-			<%= link_to 'Edit', edit_doi_path(@doi), :class => 'btn btn-default' %>
-		<% end %>
-	</p>
 </div>

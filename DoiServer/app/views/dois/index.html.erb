@@ -7,7 +7,6 @@
       <th>Name</th>
       <th>URL</th>
       <th>DOI Owner</th>
-      <th>Updated</th>
       <th></th>
       <th></th>
     </tr>
@@ -19,9 +18,8 @@
         <td><%= doi.name %></td>
 	<td><%= link_to(doi.urls.last.url,doi.urls.last.url, url_options = {:confirm => 'You will be leaving DOI Server. Continue?'})  %></td>
         <td><%= doi.user.email %></td>
-	<td><%= doi.updated_at %></td>
-        <td><%= link_to 'View', doi, :class => 'btn btn-default btn-block' %></td>
-	<td><%= link_to 'Review It', new_review_path(:doi_id => doi.id, :user_id => current_user.id), :class => 'btn btn-default btn-block' %></td>
+        <td><%= link_to 'View', doi, :class => 'btn btn-default' %></td>
+	<td><%= link_to 'Review It', new_review_path(:doi_id => doi.id, :user_id => current_user.id), :class => 'btn btn-default' %></td>
       </tr>
     <% end %>
   </tbody>

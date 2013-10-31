@@ -4,10 +4,9 @@
 		<table class="table table-condensed table-striped">
   			<thead>
     				<tr>
-      					<th>Name</th>
+      					<th>DOI</th>
       					<th>Current URL</th>
       					<th>Description</th>
-      					<th></th>
       					<th></th>
       					<th></th>
       					<th></th>
@@ -20,9 +19,8 @@
 						<td><%= doi.name %></td>
 						<td><%= link_to(doi.urls.last.url,doi.urls.last.url, url_options = {:confirm => 'You will be leaving DOI Server. Continue?'})  %></td>
         					<td><%= doi.description %></td>
-						<td><%= link_to 'Update URL', new_url_path(:doi_id => doi.id), :class => 'btn btn-default btn-block' %></td>
-        					<td><%= link_to 'Show', doi, :class => 'btn btn-default btn-block' %></td>
-        					<td><%= link_to 'Edit', edit_doi_path(doi), :class => 'btn btn-default btn-block' %></td>
+						<td><%= link_to 'Update', edit_doi_path(doi), :class => 'btn btn-default btn-block' %></td>
+        					<td><%= link_to 'View', doi, :class => 'btn btn-default btn-block' %></td>
         					<td><%= link_to 'Destroy', doi, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-default btn-block' %></td>
       					</tr>
     				<% end %>
