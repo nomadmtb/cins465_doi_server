@@ -4,7 +4,7 @@
 		<table class="table table-condensed table-striped">
   			<thead>
     				<tr>
-      					<th>Name</th>
+      					<th>DOI</th>
       					<th>Description</th>
 					<th>Current URL</th>
 					<th></th>
@@ -16,7 +16,7 @@
       					<tr>
         					<td><%= doi.name %></td>
         					<td><%= doi.description %></td>
-						<td><%= doi.urls.last.url %></td>
+						<td><%= link_to(doi.urls.last.url,doi.urls.last.url, url_options = {:confirm => 'You are leaving DOI server. Continue?'}) %></td>
 						<% if current_user %>
 							<td><%= link_to 'View', doi, :class => 'btn btn-default btn-block' %></td>
 						<% end %>

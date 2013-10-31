@@ -29,11 +29,11 @@ class ReviewsController < ApplicationController
 
     respond_to do |format|
       if @review.save
-        format.html { redirect_to @review, notice: 'Review was successfully created.' }
+        format.html { redirect_to @review.doi, notice: 'Review was successfully created.' }
         format.json { render action: 'show', status: :created, location: @review }
       else
         format.html { render action: 'new' }
-        format.json { render json: @review.errors, status: :unprocessable_entity }
+        format.json { render json: @review.doi, status: :unprocessable_entity }
       end
     end
   end
@@ -41,6 +41,11 @@ class ReviewsController < ApplicationController
   # PATCH/PUT /reviews/1
   # PATCH/PUT /reviews/1.json
   def update
+    if current_user.id != review.user_id
+      redirect_to root_path, alert: 'Don\'t be bad. You can\'t do that.'
+      return
+    end
+
     respond_to do |format|
       if @review.update(review_params)
         format.html { redirect_to @review, notice: 'Review was successfully updated.' }
