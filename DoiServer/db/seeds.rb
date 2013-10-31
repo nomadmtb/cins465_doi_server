@@ -81,7 +81,30 @@ review_3_1 = Review.create :doi_id => 3, :comment => 'Cool DOI man!', :user_id =
 review_3_2 = Review.create :doi_id => 3, :comment => 'This was a good one!', :user_id => 5
 review_3_3 = Review.create :doi_id => 3, :comment => 'This one is okay. Meh, but okay.', :user_id => 3
 
-review_4_1 = Review.create :doi_id => 2, :comment => 'Nice find! I\'ll bookmark this!', :user_id => 1
-review_4_2 = Review.create :doi_id => 2, :comment => 'This one should get removed. Crap.', :user_id => 3
-review_4_3 = Review.create :doi_id => 2, :comment => 'THANK YOU for this one!', :user_id => 4
-review_4_4 = Review.create :doi_id => 2, :comment => 'Nice try, but you still failed the class.', :user_id => 5
+review_4_1 = Review.create :doi_id => 4, :comment => 'I like this one.', :user_id => 3
+review_4_2 = Review.create :doi_id => 4, :comment => 'Take an arrow in the knee.', :user_id => 5
+review_4_3 = Review.create :doi_id => 4, :comment => 'This DOI is awesome! HL3 confirmed!', :user_id => 1
+review_4_4 = Review.create :doi_id => 4, :comment => 'This DOI is total shit.', :user_id => 2
+
+review_5_1 = Review.create :doi_id => 5, :comment => 'FIRST COMMENT!', :user_id => 4
+
+review_6_1 = Review.create :doi_id => 6, :comment => 'FIRST!!!', :user_id => 5
+review_6_2 = Review.create :doi_id => 6, :comment => 'Inaccurate piece of crap.', :user_id => 4
+review_6_3 = Review.create :doi_id => 6, :comment => 'This one is pretty good. Thanks.', :user_id => 1
+
+review_7_1 = Review.create :doi_id => 7, :comment => 'This one is inaccurate.', :user_id => 5
+review_7_2 = Review.create :doi_id => 7, :comment => 'Caught for cheating.', :user_id => 4
+review_7_3 = Review.create :doi_id => 7, :comment => 'Nice DOI dude!', :user_id => 2
+review_7_4 = Review.create :doi_id => 7, :comment => 'Nice try, but you still failed the class.', :user_id => 1
+
+review_8_1 = Review.create :doi_id => 8, :comment => 'Good find man!', :user_id => 1
+review_8_2 = Review.create :doi_id => 8, :comment => 'My favorite DOI in NA.', :user_id => 2
+review_8_3 = Review.create :doi_id => 8, :comment => 'Pretty good DOI.', :user_id => 4
+
+review_9_1 = Review.create :doi_id => 9, :comment => 'Total shit!', :user_id => 5
+review_9_2 = Review.create :doi_id => 9, :comment => 'OMG THANK YOU!', :user_id => 4
+review_9_3 = Review.create :doi_id => 9, :comment => 'Who wrote this garbage?', :user_id => 3
+
+review_10_1 = Review.create :doi_id => 10, :comment => 'Woah! This is awesome!', :user_id => 1
+review_10_2 = Review.create :doi_id => 10, :comment => 'Hey this DOI was my idea.', :user_id => 3
+review_10_3 = Review.create :doi_id => 10, :comment => 'Really?! Who writes crap like this?!', :user_id => 4
