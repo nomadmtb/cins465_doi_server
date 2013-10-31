@@ -1,13 +1,14 @@
 <div class="panel panel-info">
-	<div class="panel-heading"><h2>DOI <small>[ <%= @doi.name %> ]</small></h2></div>
+	<div class="panel-heading"><h2>DOI <small>[ <%= @doi.name %> ]</small>
+			<%= link_to 'Edit DOI', edit_doi_path(@doi), :class => 'btn btn-default' %></h2></div>
 	<div class="panel-body">
 		<table class="table table-condensed table-striped">
 			<thead>
 				<tr>
 					<th>Name</th>
+					<th>Current URL</th>
 					<th>Description</th>
 					<th>Owner</th>
-					<th>Updated</th>
 					<th>Created</th>
 				</tr>
 			</thead>
@@ -15,9 +16,9 @@
 			<tbody>
 				<tr>
 					<td><%= @doi.name %></td>
+					<td><%= @doi.urls.last.url %></td>
 					<td><%= @doi.description %></td>
 					<td><%= @doi.user.email %></td>
-					<td><%= @doi.user.updated_at %></td>
 					<td><%= @doi.user.created_at %></td>
 				</tr>
 			</tbody>
@@ -83,6 +84,5 @@
 		<% if @doi.user.id == current_user.id %>
 			<%= link_to 'Edit', edit_doi_path(@doi), :class => 'btn btn-default' %>
 		<% end %>
-		<%= link_to 'Back', dois_path, :class => 'btn btn-default' %>
 	</p>
 </div>

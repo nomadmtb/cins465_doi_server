@@ -33,7 +33,11 @@ class DoisController < ApplicationController
 
   # GET /dois/1/edit
   def edit
-    @doi.url = Url.where("doi_id = ?", params[:id]).last.url
+    if current_user.id != @doi.user_id
+    	redirect_to root_path, :alert => 'Don\'t be bad. You can\'t do that!'
+    else
+    	@doi.url = Url.where("doi_id = ?", params[:id]).last.url
+    end
   end
 
   # POST /dois
@@ -66,35 +70,42 @@ class DoisController < ApplicationController
   # PATCH/PUT /dois/1
   # PATCH/PUT /dois/1.json
   def update
+    if @doi.urls.last.url != params[:doi][:url]
+    	@url = Url.new
+    	@url.doi_id = @doi.id
 
-    @url = Url.new
-    @url.doi_id = @doi.id
+    	if params[:doi][:url] =~ /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+    		@url.url = params[:doi][:url]
+    	else
+		redirect_to @doi, alert: 'A full URL is required. Ex: http://www.google.com'
+		return
+    	end
 
-    if params[:doi][:url] =~ /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
-    	@url.url = params[:doi][:url]
-    else
-	redirect_to @doi, alert: 'A full URL is required. Ex: http://www.google.com'
-	return
+    	if !@url.save
+		redirect_to @doi, alert: 'Failed to update the URL, please try again.'
+    	end
     end
 
-    if !@url.save
-	redirect_to @doi, alert: 'Failed to update the URL, please try again.'
-    end
-
-    respond_to do |format|
-      if @doi.update(doi_params)
-        format.html { redirect_to @doi, notice: 'Doi was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @doi.errors, status: :unprocessable_entity }
-      end
-    end
+    	respond_to do |format|
+      	if @doi.update(doi_params)
+        	format.html { redirect_to @doi, notice: 'Doi was successfully updated.' }
+        	format.json { head :no_content }
+      	else
+        	format.html { render action: 'edit' }
+        	format.json { render json: @doi.errors, status: :unprocessable_entity }
+      	end
+     end
   end
 
   # DELETE /dois/1
   # DELETE /dois/1.json
   def destroy
+
+    if current_user.id != @doi.user_id
+	    redirect_to root_path, alert: 'Don\'t be bad! You can\'t do that.'
+	    return
+    end
+
     @doi.destroy
     respond_to do |format|
       format.html { redirect_to dois_url }
